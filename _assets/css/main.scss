@@ -1,12 +1,12 @@
-$font-family-sans-serif: 'Ubuntu', sans-serif;
-$font-family-cursive:       'Righteous', cursive;
+$font-family-sans-serif: 'Muli', sans-serif;
+$font-family-serif:       'Bree Serif', serif;
 
 //colors
-$dark-blue: #3173B8;
-$word-color: #181A1C;
-$light-grey: #F5F5F5;
-$darker-blue: #001D34;
-$lighter-blue: #1278CD;
+$word-color: #616161;
+$darker-color: #000000;
+$accent-color: #27B244;
+$hover-color: #3CD8AC;
+$light-grey: #F4F4F4;
 
 
 /**
@@ -26,7 +26,7 @@ $lighter-blue: #1278CD;
 
 @mixin splash-background($fileName, $bgColor) {
     background-image: asset_url($fileName);
-    background-color: $bgColor;
+    background-color: $white;
     height: 100%;
     background-position: fixed;
     background-position: center;
@@ -42,4 +42,10 @@ $lighter-blue: #1278CD;
 }
 
 @import "bootstrap";
+@import "common";
+@import "navigation";
+@import "footer";
+@import "index";
+@import "project";
+@import "farm";
 

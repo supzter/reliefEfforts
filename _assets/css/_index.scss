@@ -1,0 +1,58 @@
+.index-wrapper{
+    .siteHero{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+
+        col-md-5{
+            text-align: right;
+            .mediumimg{
+                margin-bottom: -70px;
+            }
+        }
+
+        
+    }
+    .workSection{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #F4F4F4;
+        .col-md-6{
+            padding: 2%;
+            .card{
+                text-align: center;
+                .btn{
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                    width: 60%;
+                }
+            }
+        }
+
+        .cta-row{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    .ctaSection{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .otherSection{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .col-md-4{
+            text-align: center;
+        }
+
+        .mediumimg{
+            padding-bottom: 20px;
+        }
+
+
+    }
+}

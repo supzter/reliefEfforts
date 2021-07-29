@@ -1,18 +1,45 @@
-<nav class="navbar navbar-expand-md sticky-top navbar-light">
-    
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-light justify-content-between">
+    <div class= "container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav collapsible-menu align-items-md-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/index.html">Index</a>
+                <li class="nav-item nav-general active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/company.html">About us</a>
+                <li class="nav-item nav-general dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Projects </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/farm.html">AquaOp Farm</a>
+                            <a class="dropdown-item" href="/rmm.html">RMM</a>
+                            <a class="dropdown-item" href="/fft.html">FFT</a>
+                            <a class="dropdown-item" href="/papadamn.html">Papadamn</a>
+                        </div>
+                </li>
+
+                <li class="nav-item nav-general dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Other </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/graphicdesign.html">Graphic Design</a>
+                            <a class="dropdown-item" href="/illustrations.html">Illustration</a>
+
+                        </div>
                 </li>
                
+
+
+                
             </ul>
+
+          
+            <div class="ml-auto leftbutton">
+                
+        
+            
+                <a href="http://aquaop.ca/"><button class="btn btn-primary btn-big btn-fill">Resume</button></a>
+            </div>
         </div>
+    </div>
 </nav>
     
