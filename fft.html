@@ -2,23 +2,275 @@
 layout: project
 ---
 
-<div class= "project-hero fft-hero">
-    <div class= "row justify-content-center align-items-center">
-        <div class= "col-12">
-            <h1>Formulation Tool for Aquafeed Manufacturers</h1>
-        </div>
-        <div class= "col-12">
-            {% asset ffttab.png class="project-medium-image" %}
+<div class= "fft-wrapper">
+    <div class= "project-hero fft-hero d-flex justify-content-center">
+        <div class= "hero-container">
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <h1>Formulation Tool for Aquafeed Manufacturers</h1>
+                </div>
+                <div class= "col-12 image-column">
+                    {% asset FFTCaseStudy.png class="project-large-image" %}
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class= "project-section text-section grey-section">
-    <div class= "container">
-        <div class= "row justify-content-center align-items-center">
-            <div class= "col-12">
-                <p>We have been developing a suite of tools that are used by Aquafeed manufacturers to track their feed ingredients, formulate feed, and price them according to their nutritional value. This design document will cover one of these tools: The Feed Formulation Tool.</p>
-                <br>
-                <p>The Feed Formulation Tool (FFT) is designed to generate least-cost feed formulations for over 30 species, find production volume estimates for 15 countries leading in aquaculture, and to run market sizing analysis to compare your feed ingredient against other ingredients in generating a typical feed formulation.</p>
+    <div class= "project-section text-section white-section summary-section">
+        <div class= "container">
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <h2>Quick Overview</h2>
+                </div>
+                <div class= "col-12">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    What is it?
+                                </th>
+                                <td>
+                                    A tool to perform least cost feed formulations for major farmed species in different countries
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Target Audience
+                                </th>
+                                <td>
+                                    Feed formulators, Feed Manufacturers, Feed Ingredient Manufacturers
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Who worked with me?
+                                </th>
+                                <td>
+                                    2 Developers + 2 Aquaculture Scientists
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Interesting stuff I worked in
+                                </th>
+                                <td>
+                                    User Personas, User Journeys, Data Visualization, B2B applications
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section grey-section">
+        <div class= "container">
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <p>We have been developing a suite of tools that are used by Aquafeed manufacturers to track their feed ingredients, formulate feed, and price them according to their nutritional value. This design document will cover one of these tools: The Feed Formulation Tool.</p>
+                    <br>
+                    <p>The Feed Formulation Tool (FFT) is designed to generate least-cost feed formulations for over 30 species, find production volume estimates for 15 countries leading in aquaculture, and to run market sizing analysis to compare your feed ingredient against other ingredients in generating a typical feed formulation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section white-section">
+        <div class= "container">
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <h2>The Users</h2>
+                    <br>
+                    <p>
+                        The target audience for this particular toolset are personnel from feed manufacturing and feed ingredient manufacturing companies. Before this tool was introduced, feed formulations were mostly done using competing software or manually using spreadsheets. 
+                    </p>
+                    <p>
+                        One of the major challenges we faced was to determine where some information needed to be displayed, especially the nutritional information about feed ingredients. Some users preferred to edit these values, while we only needed to display these information to the others for the sake of transparency. For the second type of users, having to scroll, or even click through this information was cumbersome and added no value to their experience. 
+                        <br>
+                        Thus, we created the following user personas. 
+                    </p>
+                </div>
+            </div>
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-md-4 col-12 user-col">
+                    {% asset persona1.png alt='my avatar' class="column-image" %}
+                </div>
+                <div class= "col-md-4 col-12 user-col">
+                    {% asset persona2.png alt='my avatar' class="column-image" %}
+                </div>
+                <div class= "col-md-4 col-12 user-col">
+                    {% asset persona3.png alt='my avatar' class="column-image" %}
+                </div>
+            </div>
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <ul>
+                        <li>
+                            Jane: This user wants to add their custom ingredient to the formulation and see how that ingredient can be used in a feed formulation, and its sale potential.
+                        </li>
+                        <li>
+                            John: This user wants to change feed ingredient values, nutrient values, group constraint values, as well as add ingredients from various places and add custom nutrients. They will then generate a formulation based on this simulation. They might tweak the values back and forth for better results. Customizability is the key for them. 
+                        </li>
+                        <li>
+                            James: This user wants to see the total Aquaculture feed production per species of a specific country. This will then enable them to decide what species they should focus on in that specific country. They don’t typically care about the feed formulation and the ingredient specifications behind these formulations, but they would appreciate having them somewhere if they want to take a closer look. 
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section grey-section">
+        <div class= "container">
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <h2>The User Journeys</h2>
+                    <br>
+                    <p>
+                        Based on our user personas, the following user journeys were created.
+                    </p>
+                </div>
+                <div class="col-12 image-column">
+                    {% asset IA.png class="column-image" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section white-section">
+        <div class= "container">
+            <div class= "row justify-content-center align-items-center">
+                <div class= "col-12">
+                    <h2>Market Size Analysis</h2>
+                    <br>
+                    <br>
+                    <p>
+                        To Address Jane’s pain points, we created the Market Size Analysis feature. The Market Size Analysis feature allows the user to select their custom ingredients and get a bird’s eye view of how their ingredient will fit in with the formulations. 
+                    </p>
+                    <br>
+                    <br>
+                    <h3>MSA - Ingredient list page</h3>
+                    <br>
+                    <p>
+                        We have a horizontal tab system to show the Ingredients, Nutritional Specifications, and Group Constraints. On the left, we also have a vertical tab system to show the list of species available. This list was around 30 entries in the worst-case scenario, and therefore we decided to place them vertically to allow room for more tabs without horizontal scrolling. The selected ingredient is pinned to the top with some highlighting for clarity. The CTA at the bottom indicates what the user has to do after finishing up the work on this page.
+                    </p>
+                </div>
+                <div class="col-12 image-column">
+                    {% asset mza-ingredients-selected.png class="column-image" %}
+                </div>
+                <div class="col-12">
+                    <h3>MSA - Results page</h3>
+                    <br>
+                    <p>
+                        Market Sizing Analysis is ingredient specific, species specific, and country specific. Therefore, we placed these three key metrics in card form at the top, with some additional metrics below. Key Species Statistics, Inclusion levels, Usage Volume, and Optimal Sale Potential are all important results for the user which are placed below the key metrics. Some users also like to see their ingredient in a typical feed formulation, so some formulation-related tables are placed below, but collapsed by default.
+                    </p>
+                </div>
+                <div class="col-12 image-column">
+                    {% asset mza-result.png class="column-image" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section grey-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h3>Feed Formulation Flow</h3>
+                    <br>
+                    <p>
+                        To address John’s user flow, we created the Feed Formulation Feature. The feed formulation feature has one key feature: Customizability. We have allowed the user to customize the ingredients by making all the values editable, as well as allowing the user to add custom nutrients and import ingredients. 
+                    </p>
+                </div>
+                <div class="col-12 image-column">
+                    {% asset formulation-input.png class="column-image" %}
+                </div>
+                <div class="col-12">
+                    <h3>Import Ingredient Function</h3>
+                    <br>
+                    <p>
+                        When importing ingredients, the user can either choose to select ingredients from their custom list (using another tool from the suite called the Raw Material Map), and/or from a country specific list stored in the FFT. Therefore, this format allows the user to select one or both of these options and add the ingredients. Additionally, we also allowed the users to play around with the inclusion levels on the app itself.
+                    </p>
+                </div>
+                <div class="col-12 image-column">
+                    {% asset fft-import.png class="column-image" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section white-section">
+        <div class= "container">
+            <div class= "row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h3>Production Volume Estimates</h3>
+                    <p>
+                        Users like James prefer to have a quick overview of the production of a certain feed in a certain country to determine how their feed ingredient would fit in. To handle their use case, we developed our Production Volume Estimates flow. 
+                    </p>
+                    <p>
+                        The flow requires only one click, where the user selects the country, and the following page is generated.
+                    </p>
+                </div>
+                <div class="col-12 image-column">
+                    {% asset pve-ingredients.png class="column-image" %}
+                </div>
+                <div class= "col-12 image-column">
+                    This page gives a bird’s eye view of major species, their feed consumption, and production. They can use the details button on the table to access ingredient and formulation information about each species.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section grey-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h2>Constraints</h2>
+                    <br>
+                    <p>
+                        Due to the urgency of the deliverable, our team decided to design this tool strictly under the limitations of Vuetify (A Vue.js material design component framework) to keep the development times reasonable. As the lead designer, I went through the Vuetify library to determine which components match our requirements the most. 
+                    </p>
+                    <p>
+                        We also had limited resources when it came to the developers, as our dev team only consisted of two developers. Due to this, I consistently held meetings with them to determine what I can do as the designer to cut their development time. As a result, most custom styling was eliminated. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section white-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h2>Prototyping</h2>
+                    <br>
+                    <p>
+                        Figma was used as our key prototyping and collaboration tool in showing the design to the client for feedback. We trained the members of the science team to edit the values on the mockups to ensure that the clients see realistic values on the tables.
+                    </p>
+                    <p>
+                        FFT is a part of AquaOP Feed, meaning that the start of the flow is from the app homepage. For this iteration, we did not have to design this page, so we needed a way to ensure that we have a way to go back to the beginning of the flow. Therefore, we added some additional navigation buttons to go back and forth inside the flow to pages that are outside of this feature. However, these buttons can be confused as buttons that will actually be present in the product by the stakeholders. So, we decided to make them look extremely different to the rest of the visual design and ugly as possible! 
+                    </p>
+                </div>
+                <div class="col-12 img-col">
+                    {% asset uglyButton.png class="project-medium-image" %}
+                </div>
+                <div class="col-12 image-column">
+                    <p>
+                        This is how our prototype was connected at the end :)
+                    </p>
+                    <br>
+                    {% asset prototype.png class="column-image" %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "project-section text-section grey-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h2>Conclusion</h2>
+                    <br>
+                    <p>
+                        Aquafeed production is not an industry that I was familiar with. As a result, I worked with a lot of Aquaculture nutritionists to come up with the design. 
+                    </p>
+                    <p>
+                        It was rewarding to learn how Aquafeed is manufactured and how much thought is put into it. It makes me appreciate the seafood I eat and it gives me a great experience in designing something for a subject I’m unfamiliar with. 
+                    </p>
+                </div>
             </div>
         </div>
     </div>

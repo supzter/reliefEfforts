@@ -1,42 +1,112 @@
-.project-hero{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    
+.project-wrapper{
+
+    .project-hero{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+
+
+        h1{
+            color: white;
+        }
+        
+    }
+
+    .image-column{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .project-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .project-medium-image{
+        max-height: 300px;
+        max-width: 100%;
+
+
+    }
+
+    .project-large-image{
+        max-width: 50%;
+    }
+
+    .column-image{
+        width: 90%;
+        box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.33);
+    }
+
+    .white-section{
+        background-color: white;
+    }
+
+    .grey-section{
+        background-color: #F4F4F4;
+    }
+
+    .single-image-row{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    h1{
+        padding-bottom: 2%;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .img-col{
+        text-align: center;
+    }
+
+    th{
+        color: $accent-color;
+    }
+
+    @media only screen and (max-width: 768px){
+        text-align: center;
+
+        .project-hero{
+            text-align: center;
+            .hero-container{
+                max-width: 90%;
+                
+            }
+        }
+
+        .project-section{
+            padding-left: 2%;
+            padding-right: 2%;
+            .container{
+                max-width: 95%;
+                .project-section{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+        
+
+        .project-large-image{
+            max-width: 90%;
+        }
+
+        .column-image{
+            width: 100%;
+        }
+
+        
+    }
+
 }
 
-.project-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.project-medium-image{
-    max-height: 300px;
-    max-width: 100%;
-}
-
-.white-section{
-    background-color: white;
-}
-
-.grey-section{
-    background-color: #F4F4F4;
-}
-
-.single-image-row{
-    text-align: center;
-}
-
-h2{
-    text-align: center;
-}
-
-h1{
-    padding-bottom: 2%;
-}
-
-.img-col{
-    text-align: center;
-}

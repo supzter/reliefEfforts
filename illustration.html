@@ -1,0 +1,45 @@
+---
+layout: skills
+
+art:
+
+- file: i1.png
+- file: i2.png
+- file: i3.png
+- file: i4.png
+- file: i5.png
+- file: i6.png
+---
+
+
+<div class= "skill-title">
+    <div class= "row justify-content-center align-items-center">
+        <div class="col-12">
+            <h1>Illustration</h1>
+            <p>Drawing is my favorite past-time. I work as a freelance comic artist and an illustrator with over 80K subscribers!</p>
+        </div>
+    </div>
+</div>
+<div class= "skill-list">
+    <div class= "container">
+        <div class= "row row-eq-height justify-content-center">
+            {% for art in page.art %}
+                <div class= "col-md-4 col-12 col-card skill-col">
+                   
+                            {{ art.file | append:' class="artimg skillimg" '| asset}}
+                     
+                </div>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+<div class= "skill-cta">
+    <div class= "row row-eq-height justify-content-center">
+        <div class= "col-md-8">
+            <h2>Want to see more projects?</h2>
+        </div>
+        <div class="col-md-8">
+            <a href= "https://www.artstation.com/supzter"><button class="btn btn-primary btn-big btn-fill">Check my Artstation!</button></a>
+        </div>
+    </div>
+</div>

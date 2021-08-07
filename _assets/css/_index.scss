@@ -1,10 +1,18 @@
 .index-wrapper{
+
+    .projectimg{
+        width: 100%;
+    }
     .siteHero{
         padding-top: 70px;
         padding-bottom: 70px;
         a{
             color: white;
             text-decoration: underline;
+        }
+
+        P{
+            font-size: 20px;
         }
 
         col-md-5{
@@ -20,8 +28,9 @@
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #F4F4F4;
-        .col-md-6{
-            padding: 2%;
+        .col-md-4{
+            //padding: 1%;
+            padding: 5px;
             .card{
                 text-align: center;
                 .btn{
@@ -34,13 +43,14 @@
 
         .cta-row{
             text-align: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
     .ctaSection{
         padding-top: 50px;
         padding-bottom: 50px;
+        text-align: center;
     }
     .otherSection{
         padding-top: 50px;
@@ -54,5 +64,40 @@
         }
 
 
+    }
+
+    @media only screen and (max-width: 768px){
+        .siteHero{
+            text-align: center;
+
+            h1{
+                padding-bottom: 30px;
+            }
+        }
+
+        .workSection{
+            .container{
+                .row{
+                    .col-card{
+                        
+                        .btn{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .otherSection{
+            .container{
+                .row{
+                    .col-md-4{
+                        padding-bottom: 30px;
+                        padding-top: 30px;
+                        border-bottom: 0.5px solid rgb(199, 199, 199);
+                    }
+                }
+            }
+        }
     }
 }

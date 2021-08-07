@@ -1,0 +1,35 @@
+.webtoon-hero{
+    .row{
+        .col-7{
+            h1{
+                color: black;
+            }
+        }
+    }
+
+    
+    
+}
+
+.project-section{
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+        .row{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            h2{
+                padding-bottom: 20px;
+            }
+
+            ul{
+                list-style-type: circle;
+                li{
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                }
+            }
+        }
+    }
+}

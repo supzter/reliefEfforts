@@ -1,5 +1,6 @@
 .farm-hero{
-    background-image: asset_url("farmbg.jpg");
+    background-color: #00a7c0;
+    background: linear-gradient(90deg, rgb(0, 136, 164) 0%, rgb(0, 167, 189) 100%);
     background-attachment: fixed;
     background-size: cover;
 }

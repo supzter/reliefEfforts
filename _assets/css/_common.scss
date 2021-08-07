@@ -5,6 +5,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.row{
+    max-width: 100%;
+}
+
 h1{
 
     font-family: $font-family-serif;
@@ -27,6 +31,11 @@ h1{
     color: white;
 }
 
+.tinyText{
+    font-size: 12px;
+    text-align: center;
+}
+
 .p-white{
     color: white;
 }
@@ -44,7 +53,7 @@ h2{
 }
 
 h3{
-    font-family: $font-family-serif;
+    font-family: $font-family-sans-serif;
     font-size: 24px;
     color: $word-color;
     padding-top: 2%;
@@ -97,6 +106,7 @@ b {
 .greenSection{
     background: rgb(2,82,98);
     background: linear-gradient(90deg, rgba(2,82,98,1) 0%, rgba(114,204,78,1) 100%);
+    //background: linear-gradient(90deg, rgba(13,119,197,1) 0%, rgba(32,227,150,1) 100%);
 }
 
 .modalbtn{
@@ -230,7 +240,18 @@ b {
 
 .mediumimg{
     height: 300px;
+    max-width: 100%;
 
+}
+
+.lrgimg{
+    width: 90%;
+    max-width: 100%;
+}
+
+.extra-large-img{
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -312,12 +333,11 @@ a{
     }
 }
 
-ul{
-    list-style-type: none;
-}
+
 
 .card{
     outline: none;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.14);
 }
 
 
@@ -327,6 +347,7 @@ ul{
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
+        width: 80%;
     }
 
     .container{
@@ -335,6 +356,7 @@ ul{
 
     h1{
         font-size: 30px;
+        
     }
 
     h2{
@@ -407,12 +429,16 @@ ul{
 @media only screen and (max-width: 992px){
     .btn.btn-big{
     
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         padding-left: 20%;
         padding-right: 20%;
         //margin: 10px;
         
+    }
+
+    h2{
+        margin-bottom: 5px;
     }
 }
 

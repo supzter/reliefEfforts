@@ -1,0 +1,263 @@
+---
+layout: project
+---
+
+<div class= "project-hero rmm-hero d-flex justify-content-center">
+    <div class= "hero-container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h1>Aquafeed Ingredient Management Platform</h1>
+            </div>
+            <div class= "col-12 image-column">
+                {% asset RMMScreen1.png class="project-large-image" %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class= "project-section text-section white-section summary-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h2>Quick Overview</h2>
+            </div>
+            <div class= "col-12">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>
+                                What is it?
+                            </th>
+                            <td>
+                                A tool to track, analyze, and manage raw materials used in Feed Production
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Target Audience
+                            </th>
+                            <td>
+                                Feed Manufacturers
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Who worked with me?
+                            </th>
+                            <td>
+                                3 Developers + 2 Aquaculture Scientists
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Interesting stuff I worked in
+                            </th>
+                            <td>
+                                Data Visualization, Inventory Management Design, Data Entry Design, B2B applications
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class= "project-section text-section grey-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <p>
+                    AquaOP Feed Suite is a set of tools used by the aqua feed manufacturers to track their feed ingredients, formulate feed quantities, and price them according to their nutritional value. This design document will cover one of these tools in this suite, the Raw Material Map.
+                </p>
+                <p>
+                    The Raw Material Map (or RMM) is used to store information about the feed ingredients (also called raw materials). This information includes their suppliers, batches, shipments, nutritional compositions, quality metrics, and past data.
+                </p>
+                <p>
+                    When this tool was first conceptualized, it was intended to be a static sheet of data for a single client. However, upon realizing its potential, we decided to make it a dynamic application, allowing multiple feed manufacturers to use it. 
+                </p>
+                
+            </div>
+            <div class= "col-12 image-column">
+                {% asset rmmSpreadsheet.png class="column-image" %}
+                <br>
+                <p class= "tinyText">
+                    A Typical Feed Ingredient recording system
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section white-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h2>The Use Cases</h2>
+                <br>
+                <br>
+                <p>
+                    This tool is primarily used by feed manufacturers to keep their feed ingredient information in one place. Based on the user personas we created, we came across the following four major use cases of RMM.
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        Store and manage ingredient information
+                    </li>
+                    <li>
+                        Store and manage ingredient shipment and inventory information
+                    </li>
+                    <li>
+                        Store and manage supplier information
+                    </li>
+                    <li>
+                        Store and manage custom nutritional parameters
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    There were a few key pain points that we had to address based on these use cases and the user journeys we created. 
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        It’s hard to trace back to the origins of a good batch of ingredients/bad batch of ingredients.
+                    </li>
+                    <li>
+                        Some shipments contain multiple ingredients from multiple suppliers, and this wasn’t addressed properly.
+                    </li>
+                    <li>
+                        Some specific nutrients and quality parameters such as pigments are not available on Wittaya’s database.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section grey-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h2>The Design</h2>
+                <br>
+                <br>
+                <p>
+                    We started creating the mockups for our software based on the research. We had to design the components based off of Vuetify.js (A Vue.js material design component framework) to keep the development times reasonable. As the lead designer, I went through the Vuetify library to determine which components fitour requirements the most. 
+                </p>
+                <p>
+                    Here are some of my favorite pages and the rationale behind their design.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section white-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h3>The ingredient List page</h3>
+                <p>
+                    Most feed manufacturers use spreadsheets to store information about their raw materials. Our user research pointed to the fact that our users would be more comfortable with a similar format for this product as well. Therefore, we went with a simple tabular layout for our ingredient list page. We divided our ingredients into sub categories in order to make it easier for the user to search for a particular ingredient.
+                </p>
+            </div>
+            <div class="col-12 image-column">
+               
+                {% asset IngredientList.png class="column-image" %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section grey-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h3>Ingredient Details page</h3>
+                <p>
+                    Next, we have our Ingredient Details page. This is accessed by clicking on the “More Info” button on an ingredient in the table. This page acts as a hub, providing details about the ingredient including its general information, nutritional information, volume and pricing information, as well as batch information.
+                    <br>
+                    These are presented in a dashboard-like interface for a quick overview of the ingredient itself.
+                </p>
+                <p>
+                    There is a considerable amount of information about ingredients recorded in RMM. As a result, the page can get quite crowded and difficult to follow. As a solution, I chose a card-based approach, grouping similar information into sections. 
+                </p>
+            </div>
+            <div class="col-12 image-column">
+               
+                {% asset Ingredient_description.png class="column-image" %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section white-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h3>The Shipment Page</h3>
+                <p>
+                    A shipment refers to a truck full of ingredients delivered to the feed manufacturer. This shipment may contain multiple ingredients coming from multiple suppliers. 
+                    <br>
+                    A specific ingredient being delivered from a specific supplier in a shipment is referred to as a batch. 
+                    <br>
+                    Therefore, an easier way to understand how shipments work would be to say that a Shipment contains multiple batches. Thus, we needed a page to record these shipments and the batches belonging to that shipment. 
+                </p>
+            </div>
+            <div class="col-12 image-column">
+               
+                {% asset shipments.png class="column-image" %}
+
+            </div>
+            <div class= "col-12">
+                <p>
+                    Our shipment page is divided into two parts. The left card lists down all the shipments with a search bar to search for a shipment and a button to add a shipment. On the right side, we display shipment details and the batches that came along in the shipment. We also allow the user to add a batch on this card. 
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section grey-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h2>Visual design</h2>
+                <p>
+                    Due to the scope of the planned features and constraints on the delivery time, we did not plan to add any custom styling to this project. However, we tried to maintain the brand identity through the usage of colors (i.e, the call-to-action buttons, form components, etc.). Rest of the styling was defaults from Vuetify. Even when I was creating mockups, I did my best to use the fonts and colors consistently to ensure that I make them look as close as I can to the final product.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section white-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h2>Prototyping</h2>
+                <p>
+                    Figma was used as our key prototyping and collaboration tool in showing the design to the client for feedback. We trained the members of the science team to edit the values on the mockups to ensure that the clients see realistic values on the tables.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class= "project-section text-section grey-section">
+    <div class= "container">
+        <div class= "row justify-content-center align-items-center">
+            <div class= "col-12">
+                <h2>Conclusion</h2>
+                <p>
+                    Aquafeed production is not an industry that I was familiar with. As a result, I worked with a lot of Aquaculture nutritionists to come up with the design. 
+                    <br>
+                    It was rewarding to learn how aqua-feed is manufactured and how much thought is put into it. It made me appreciate the seafood I eat a bit more and gave me a great experience in designing a web application for a subject that I am not too familiar with. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

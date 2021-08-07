@@ -5,6 +5,7 @@ $font-family-serif:       'Bree Serif', serif;
 $word-color: #616161;
 $darker-color: #000000;
 $accent-color: #27B244;
+//$accent-color: #14CFB6;
 $hover-color: #3CD8AC;
 $light-grey: #F4F4F4;
 
@@ -48,4 +49,9 @@ $light-grey: #F4F4F4;
 @import "index";
 @import "project";
 @import "farm";
+@import "rmm";
+@import "fft";
+@import "skill";
+@import "webtoon";
+
 
