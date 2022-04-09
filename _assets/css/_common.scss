@@ -7,6 +7,23 @@ html{
 
 .row{
     max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container{
+   // margin: 0;
+    max-width: 100vh;
+}
+
+a{
+    color: $accent-color;
+    &:hover{
+        color: $hover-color;
+    }
+    &:active{
+        color: $accent-color;
+    }
 }
 
 h1{
@@ -46,10 +63,10 @@ h1{
 
 
 h2{
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-serif;
     color: black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h3{

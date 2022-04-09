@@ -1,18 +1,27 @@
 .index-wrapper{
 
-    .projectimg{
-        width: 100%;
-    }
+    overflow-x: hidden;
+
     .siteHero{
         padding-top: 70px;
         padding-bottom: 70px;
+        background-image: asset_url("econCrisis2.png");
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        text-shadow: 2px 2px 20px #000000;
         a{
             color: white;
             text-decoration: underline;
         }
 
-        P{
+        p{
             font-size: 20px;
+            color: white;
+        }
+
+        h1{
+            color: white;
         }
 
         col-md-5{
@@ -22,49 +31,42 @@
             }
         }
 
+
+
         
     }
-    .workSection{
+
+    .contentsection{
         padding-top: 50px;
         padding-bottom: 50px;
-        background-color: #F4F4F4;
-        .col-md-4{
-            //padding: 1%;
-            padding: 5px;
-            .card{
-                text-align: center;
-                .btn{
-                    padding-top: 2%;
-                    padding-bottom: 2%;
-                    width: 60%;
-                }
-            }
-        }
 
-        .cta-row{
+        .title-col{
             text-align: center;
-            padding-top: 50px;
-            padding-bottom: 50px;
         }
+  
     }
+
+    .contentsection:nth-child(odd) {
+        background: #f4f4f4;
+    }
+
     .ctaSection{
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
-    }
-    .otherSection{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        .col-md-4{
-            text-align: center;
+        background-image: asset_url("econ.jpeg");
+        background-size: cover;
+        h2{
+            color:white;
+
         }
-
-        .mediumimg{
-            padding-bottom: 20px;
+        p{
+            color: white;
         }
-
-
     }
+
+    
+   
 
     @media only screen and (max-width: 768px){
         .siteHero{
@@ -75,29 +77,8 @@
             }
         }
 
-        .workSection{
-            .container{
-                .row{
-                    .col-card{
-                        
-                        .btn{
-                            width: auto;
-                        }
-                    }
-                }
-            }
-        }
-
-        .otherSection{
-            .container{
-                .row{
-                    .col-md-4{
-                        padding-bottom: 30px;
-                        padding-top: 30px;
-                        border-bottom: 0.5px solid rgb(199, 199, 199);
-                    }
-                }
-            }
+        .contentsection{
+            text-align: center;
         }
     }
 }
